@@ -41,9 +41,9 @@ Esta API foi desenvolvida utilizando o framework **Fastify** para gerenciar livr
    - Adicione as seguintes variáveis:
 
      ```
-     DATABASE_URL=postgresql://user:password@localhost:5432/db_name
+     DATABASE_URL="postgresql://postgres:postgres@localhost:5432/api-juridic?schema=public"
      ```
-5. Execute as migrações do banco de dados (se estiver usando Prisma):
+5. Execute as migrações do banco de dados:
    ```bash
    npx prisma migrate dev
    ```
